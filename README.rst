@@ -37,7 +37,11 @@ tabr
     Add tabs to PDFs
 
 
-A longer description of your project goes here...
+I don't know about you, but when I read a book or journal article,
+I like to use post-it notes and other sticky tabs to mark important 
+text and make comments to myself. The `tabr` project provides an
+API for doing the electronic equivalent of tabbing a book or 
+document.
 
 
 .. _pyscaffold-notes:
@@ -45,20 +49,19 @@ A longer description of your project goes here...
 Making Changes & Contributing
 =============================
 
-This project uses `pre-commit`_, please make sure to install it before making any
-changes::
+A `conda`_ `environment.yml` file is provided to help get going
+quickly, including installation of `pre-commit`_::
 
-    pip install pre-commit
-    cd tabr
-    pre-commit install
+    $ conda env create -f environment.yml
+    $ conda activate tabr
+    $ pip install -e .
 
 It is a good idea to update the hooks to the latest version::
 
-    pre-commit autoupdate
-
-Don't forget to tell your contributors to also install and use pre-commit.
+    $ pre-commit autoupdate
 
 .. _pre-commit: https://pre-commit.com/
+.. _conda: https://conda.io
 
 Note
 ====
